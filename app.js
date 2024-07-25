@@ -304,7 +304,7 @@ class Chatbox {
     }
 
     textToSpeech(text) {
-        const apiKey = 'AIzaSyDk5RQaoYd7eAj3efRoGsYF6xBKbcrP7f8'; // Replace with your actual API key
+        const apiKey = ''; // Replace with your actual API key
         const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
         const requestBody = {
             input: { text: text },
