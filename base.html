@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">MIA</h4>
+                    <p class="chatbox__description--header">Hi. My name is Mia. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button"><img src="./assets/send.svg"/></button>
+                <button class="chatbox__refresh--footer refresh__button" style="border: 0; height:40px; width: 40px; cursor: pointer;"><img src="./assets/refresh.png"/></button>
+                <button class="chatbox__voice--footer voice__button" style="border: 0; height:40px; width: 40px; cursor: pointer;"><img src="./assets/voice.png"/></button>
+                <select class="chatbox__language--footer language__dropdown">
+                    <option value="en">English(En)</option>
+                    <option value="hi">हिन्दी (Hi)</option>
+                    <option value="bn">বাংলা (Bn)</option>
+                    <option value="te">తెలుగు (Te)</option>
+                    <option value="mr">मराठी (Mr)</option>
+                    <option value="ta">தமிழ் (Ta)</option>
+                    <option value="gu">ગુજરાતી (Gu)</option>
+                    <option value="kn">ಕನ್ನಡ (Kn)</option>
+                    <option value="ml">മലയാളം (Ml)</option>
+                    <option value="pa">ਪੰਜਾਬੀ (Pa)</option>
+                    <option value="ur">اردو (Ur)</option>
+                </select>
+                <div class="loading-spinner"></div> <!-- Spinner for both send and refresh actions -->
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="./assets/chatbox-icon.svg"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="app.js"></script>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+</html>
